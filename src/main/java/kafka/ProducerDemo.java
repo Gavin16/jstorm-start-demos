@@ -12,7 +12,7 @@ import java.util.Properties;
 public class ProducerDemo {
 
     static private final String TOPIC = "topic1";
-    static private final String BROKER_LIST = "192.168.0.105:9092";
+    static private final String BROKER_LIST = "192.168.0.110:9092";
 
 
     public static void main(String[] args) throws Exception {
