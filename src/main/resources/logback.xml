@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    logback 日志级别从高到地低依次为：OFF 、 FATAL 、 ERROR 、 WARN 、 INFO 、 DEBUG 、 TRACE 、 ALL
+    日志输出规则：根据当前ROOT 级别，日志输出时，级别高于root默认的级别时 日志就会输出
+
+    使用logback日志配置  是用的全量配置,若配置文件中不配置则不打印任何日志
+-->
+<configuration scan="false" scanPeriod="60 seconds" debug="false">
+
+
+
+
+<!--  去掉 kafka 控制台日志打印
+    <logger name="org.apache.kafka" level="OFF"/>
+    <logger name="io.netty" level="OFF" />
+    <logger name="com.kafka.ighack.Consumer"  level="debug" additivity="false" >
+        <appender-ref ref="FILE"/>
+    </logger>
+    <logger name="com.lambdaworks.redis" level="OFF" />
+-->
+</configuration>
