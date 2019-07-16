@@ -38,7 +38,7 @@ public class ProducerDemo {
         // 由于网络抖动或者leader选举等原因, producer 发送的消息可能会失败，可以在properties 参数中设置producer的重发次数
         //  retries = 0 表示不做重发; producer 认为的发送失败 有可能并不是真正的发送失败，而是在broker提交后发送响应给producer producer由于某种原因
         //  没有成功接收到, 这将导致producer 向broker 发送重复的消息，因此retries > 0 时需要consumer在消费时对消息采取去重处理
-        props.put("retries","3");
+        props.put("retries","1");
         //  producer 将发往同一分区的多条消息封装进一个batch 中，当batch 满了的时候，producer 会发送batch中的所有消息
         //  可以通过 配置batch.size 来设置 batch 容量的大小； batch 过大占用过多内存，batch 过小
         props.put("batch.size","323840");
